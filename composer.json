@@ -1,0 +1,27 @@
+{
+    "name": "debugger/duk",
+    "version": "1.0.0",
+    "description": "Laravel debugger client",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0|^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Debugger\\Duk\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Debugger\\Duk\\DukServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
